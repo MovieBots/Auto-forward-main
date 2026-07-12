@@ -12,14 +12,14 @@ def is_enabled(value, default):
 
 SESSION = environ.get("SESSION", "N2 forward bot")
 USER_SESSION = environ.get("USER_SESSION", "") #Pyrogram session dalna hai yahan
-API_ID = 25163484
-API_HASH = "145bcbc424d1c1ffe04f3e607ea55c9a"
+API_ID = 24770554
+API_HASH = "6f17857655c644baed6ecca72bbce7f6"
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002137528664"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002074744533"))
 PORT = int(environ.get("PORT", "8080"))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6302921275').split()]
-TARGET_DB = int(environ.get("TARGET_DB", "-1002155536121"))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6571116013').split()]
+TARGET_DB = int(environ.get("TARGET_DB", "-1002222465571"))
 UPSTREAM_REPO = environ.get("UPSTREAM_REPO", "https://github.com/MandaliWala/File-Forward-Bottermux")
 #Auto Forward vars
-FROM_DB = [int(channel_id) for channel_id in environ.get('FROM_DB', '-1002248826741 -1002116767957 -1002464939396 -1002753463498 -1001971879597 -1002510094945 -1002056617893 -1002369988753').split() if re.match(r'^-?\d+$', channel_id)]
-TO_DB = int(environ.get("TO_DB", "-1002189644835"))
+FROM_DB = [int(channel_id) for channel_id in environ.get('FROM_DB', '-1002911864051 -1003713248331 -1001676473152 -1004417086513').split() if re.match(r'^-?\d+$', channel_id)]
+TO_DB = int(environ.get("TO_DB", "-1002222465571"))
